@@ -33,17 +33,14 @@
         const msalInstance = new msal.PublicClientApplication(msalConfig);
 
         async function signIn() {
-            try {
-                const authResponse = await msalInstance.loginPopup(loginRequest);
+            const authResponse = await msalInstance.loginPopup(loginRequest);
 
-                if (authResponse) {
-                    if (authResponse.account) {
-                        console.log('Authentication successful');
-                    }
+            if (authResponse) {
+                if (authResponse.account) {
+                    console.log('Authentication successful');
                 }
-            } catch (error) {
-                console.error('Authentication error:', error);
             }
+
         }
     </script>
 </body>
