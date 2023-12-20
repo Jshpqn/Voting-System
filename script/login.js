@@ -2,7 +2,7 @@ const msalConfig = {
     auth: {
         clientId: '6a7ae613-d2d6-4d73-adc2-ca052d3ff311',
         authority: 'https://login.microsoftonline.com/common',
-        redirectUri: 'http://localhost:5500/index.html',
+        redirectUri: 'https://jshpqn.github.io/Voting-System/login.html',
     },
     cache: {
         cacheLocation: "localStorage",
