@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testing</title>
     <script src="https://alcdn.msauth.net/browser/2.17.0/js/msal-browser.js"></script>
 </head>
+
 <body>
     <div class="container">
         <button id="signIn" onclick="signIn()">Sign In with Microsoft</button>
         <p id="message"></p>
     </div>
-    <script src="script/login.js"></script>
+    <script>
+        const msalConfig = {
+            auth: {
+                clientId: '6a7ae613-d2d6-4d73-adc2-ca052d3ff311',
+                authority: 'https://login.microsoftonline.com/common',
+                redirectUri: 'https://jshpqn.github.io/Voting-System/login.html',
+            },
+            cache: {
+                cacheLocation: "localStorage",
+                storeAuthStateInCookie: true,
+            },
+        };
+
+        const loginRequest = {
+            scopes: ['openid', 'profile', 'User.Read'],
+        };
+
+        const msalInstance = new msal.PublicClientApplication(msalConfig);
+
+        async function signIn() {
+            try {
+                msalInstance.loginPopup(loginRequest, (error, authResponse) => {
+                    if (error) {
+                        console.error('Authentication error:', error);
+                    } else if (authResponse) {
+                        if (authResponse.account) {
+                            console.log("tapos");
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error('error:', error);
+            }
+        }
+    </script>
 </body>
+
 </html>
