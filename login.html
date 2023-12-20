@@ -15,36 +15,40 @@
     </div>
     <script>
         import { PublicClientApplication } from "@azure/msal-browser";
+        async function signIn() {
 
-        const msalConfig = {
-            auth: {
-                clientId: '6a7ae613-d2d6-4d73-adc2-ca052d3ff311',
-                authority: 'https://login.microsoftonline.com/common',
-                redirectUri: 'https://jshpqn.github.io/Voting-System/login.html'
-            }
-        };
 
-        const msalInstance = new PublicClientApplication(msalConfig);
-        await msalInstance.initialize();
+            const msalConfig = {
+                auth: {
+                    clientId: '6a7ae613-d2d6-4d73-adc2-ca052d3ff311',
+                    authority: 'https://login.microsoftonline.com/common',
+                    redirectUri: 'https://jshpqn.github.io/Voting-System/login.html'
+                }
+            };
 
-        msalInstance.handleRedirectPromise().then((tokenResponse) => {
-            if (tokenResponse !== null) {
-                console.log('Access Token:', tokenResponse.accessToken);
-                console.log('ID Token:', tokenResponse.idToken);
-                msalInstance.acquireTokenSilent({
-                    scopes: ['User.Read'],
-                }).then((response) => {
-                    console.log('User Information:', response.account);
-                }).catch((error) => {
-                    console.error('Error fetching user information:', error);
-                });
+            const msalInstance = new PublicClientApplication(msalConfig);
+            await msalInstance.initialize();
 
-            } else {
-                console.log('Not coming back from an authentication redirect.');
-            }
-        }).catch((error) => {
-            console.error('Error handling redirect:', error);
-        });
+            msalInstance.handleRedirectPromise().then((tokenResponse) => {
+                if (tokenResponse !== null) {
+                    console.log('Access Token:', tokenResponse.accessToken);
+                    console.log('ID Token:', tokenResponse.idToken);
+                    msalInstance.acquireTokenSilent({
+                        scopes: ['User.Read'],
+                    }).then((response) => {
+                        console.log('User Information:', response.account);
+                    }).catch((error) => {
+                        console.error('Error fetching user information:', error);
+                    });
+
+                } else {
+                    console.log('Not coming back from an authentication redirect.');
+                }
+            }).catch((error) => {
+                console.error('Error handling redirect:', error);
+            });
+        }
+
 
     </script>
 </body>
