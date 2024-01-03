@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  padding-right: 15px;
+}
+
+.logo img {
+  height: 130px;
+}
+
+.name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  margin-right: auto; /* Push pages to the left */
+}
+
+.nav {
+  background-color: #197FCB;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pages {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pages a {
+  margin-right: 20px;
+}
+
+.pages,
+.profile,
+.more {
+  display: flex;
+  align-items: center;
+}
