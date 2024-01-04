@@ -16,3 +16,11 @@ footer {
     height: 100px;
     background-color: #06192D;
 }
+
+.facebook, .twitter, .youtube, .instagram {
+    color: rgb(208, 217, 221);
+}
+
+.facebook {
+    color: rgb(208, 217, 221);
+}

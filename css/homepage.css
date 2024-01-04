@@ -1,5 +1,5 @@
 hr {
-    border: 1px solid rgb(223, 223, 223);
+    border: 1px solid rgb(219, 219, 219);
 }
 
 .blue {
@@ -10,7 +10,7 @@ hr {
     width: 92.5%;
     height: 100%;
 
-    border: 3px solid rgb(223, 223, 223);
+    border: 1px solid rgb(223, 223, 223);
     border-radius: 10px;
 
     margin: auto;
@@ -18,17 +18,19 @@ hr {
 }
 
 .welcome {
-    border-bottom: 3px solid rgb(223, 223, 223);
+    border-bottom: 1px solid rgb(223, 223, 223);
 }
 
 .welcome p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     margin: 20px;
 }
 
 .images {
-    margin: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
 
     display: flex;
     justify-content: center;
@@ -36,6 +38,7 @@ hr {
 
 .images img {
     width: 100%;
+    border-radius: 10px;
 }
 
 .slide-count {
@@ -48,7 +51,7 @@ hr {
     width: 92.5%;
     height: 100%;
 
-    border: 3px solid rgb(223, 223, 223);
+    border: 1px solid rgb(223, 223, 223);
     border-radius: 10px;
 
     margin: auto;
@@ -64,13 +67,13 @@ hr {
 .title {
     display: flex;
     justify-content: space-between;
-    border-bottom: 3px solid rgb(223, 223, 223);
+    border-bottom: 1px solid rgb(223, 223, 223);
 }
 
 .title p,
 i {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     margin: 20px;
 }
 
@@ -105,7 +108,7 @@ i {
 }
 
 .card {
-    border: 3px solid rgb(223, 223, 223);
+    border: 1px solid rgb(223, 223, 223);
     width: 25%;
     height: 100%;
 }
