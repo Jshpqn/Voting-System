@@ -63,6 +63,7 @@ button:hover {
 
 .forms input {
     margin-top: 20px;
+    padding-left: 15px;
 
     width: 350px;
     height: 40px;
