@@ -17,10 +17,22 @@ footer {
     background-color: #06192D;
 }
 
-.facebook, .twitter, .youtube, .instagram {
-    color: rgb(208, 217, 221);
+.fa-twitter:hover {
+    color: rgb(53, 186, 253) !important;
+    transition: 0.25s;
 }
 
-.facebook {
-    color: rgb(208, 217, 221);
+.fa-facebook:hover {
+    color: rgb(14, 87, 223) !important;
+    transition: 0.25s;
+}
+
+.fa-youtube:hover {
+    color: rgb(255, 30, 30) !important;
+    transition: 0.25s;
+}
+
+.fa-instagram:hover {
+    color: rgb(209, 36, 79) !important;
+    transition: 0.25s;
 }

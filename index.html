@@ -29,12 +29,17 @@
         <div class="login">
             <p style="margin-bottom: 50px;">Login Now</p>
             <div class="forms">
-                <input type="text" placeholder="STI Microsoft 0365 Account">
-                <input type="text" placeholder="Password" id="">
+                <form action="">
+                    <input type="text" placeholder="STI Microsoft 0365 Account"
+                        pattern="^\d{6}\.[a-zA-Z]+@bacoor\.sti\.edu\.ph$" required>
+                    <input type="text" placeholder="Password" id="" required>
+                    <button>Login</button>
+                </form>
+
             </div>
-            <button>Login</button>
-            <p style="font-size: 15px;">Having Trouble Logging in? <span style="color: rgb(216, 7, 0);">Click Here</span></p>
-            <p style="font-size: 15px; color: #197FCB;">Create Account</p>
+
+            <p style="font-size: 15px;">Having Trouble Logging in? <span style="color: rgb(216, 7, 0);">Click
+                    Here</span></p>
             <a href="dashboard.html" style="color: red;">Dashboard (test)</a>
         </div>
     </div>
@@ -43,19 +48,19 @@
         <a href="">Contact</a>
         <div class="socialMedia">
             <a href="https://web.facebook.com/sti.edu?_rdc=1&_rdr" class="facebook">
-                <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i>
             </a>
             <a href="https://twitter.com/sticollege" class="twitter">
-                <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i>
             </a>
             <a href="https://www.youtube.com/user/STIdotEdu" class="youtube">
-                <i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-youtube fa-lg" style="color: #ffffff;"></i>
             </a>
             <a href="https://www.instagram.com/stidotedu/" class="instagram">
-                <i class="fa-brands fa-square-instagram fa-xl" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
             </a>
-            
-            
+
+
         </div>
     </footer>
 </body>
