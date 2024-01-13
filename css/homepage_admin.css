@@ -129,6 +129,135 @@ i {
     font-weight: 100;
 }
 
+.edit {
+    width: 100%;
+    height: 600px;
+
+    padding: 15px;
+
+    background-color: rgb(221, 225, 228);
+}
+
+.partylist-candidates {
+    padding: 20px;
+
+    background-color: white;
+}
+
+.top {
+    display: flex;
+
+    padding-bottom: 30px;
+}
+
+.top button {
+    background-color: rgb(9, 212, 9);
+    color: white;
+
+    width: 150px;
+    height: 40px;
+
+    border: none;
+}
+
+.pn {
+    margin-left: 38%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.edit .label, .list {
+    display: flex;
+}
+
+.label {
+    border-bottom: 1px solid rgb(221, 225, 228);
+    padding-bottom: 20px;
+}
+
+.list-card {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.edit .number {
+    padding-right: 10%;
+}
+
+.edit .names {
+    padding-right: 25%;
+}
+
+.edit .label-position {
+    padding-right: 15%;
+}
+
+.edit .label, .list-card {
+    display: flex;
+}
+
+.list-card .number {
+    padding-top: 10px;
+    padding-right: 11%;
+}
+
+.list-card .names {
+    padding-top: 10px;
+    padding-right: 11%;
+}
+
+.list-card .position {
+    margin-right: 9%;
+    border: none;
+}
+
+.list-card option {
+    margin-right: 9%;
+    border: none;
+}
+
+.list-card .edit-profiles {
+    margin-right: 2%;
+    padding-top: 10px;
+}
+
+.edit-member {
+    width: 100px;
+    height: 40px;
+
+    margin-left: 5%;
+    padding-top: 3px;
+
+    border: none;
+
+    background-color: rgb(26, 189, 26);
+    color: white;
+}
+
+.delete-member {
+    width: 100px;
+    height: 40px;
+
+    margin-left: 1%;
+    padding-top: 3px;
+
+    border: none;
+
+    background-color: #e60e0e;
+    color: white;
+}
+
+.edit-member:hover {
+    background-color: rgb(11, 146, 11);
+    cursor: pointer;
+}
+
+.delete-member:hover {
+    background-color: #b30615;
+    cursor: pointer;
+}
+
 .vote {
     margin-left: 43.2%;
     margin-bottom: 20px;
@@ -146,17 +275,4 @@ i {
      */
     background-color: rgb(69, 100, 69);
     color: rgb(199, 199, 199);
-}
-@media (max-width: 705px) {
-.name {
-    font-size: 20px;
-}
-.slideshow {
-    width: 85%;
-    height: 100%;
-}
-.partylist {
-    width: 85%;
-    height: 100%;
-}
 }
