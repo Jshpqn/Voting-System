@@ -78,3 +78,16 @@ a {
   display: flex;
   align-items: center;
 }
+
+.notif {
+  padding-top: 8px;
+  height: 100%;
+}
+
+.profile {
+  height: 100%;
+}
+
+.more {
+  height: 100%;
+}

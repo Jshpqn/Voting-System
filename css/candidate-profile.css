@@ -76,3 +76,16 @@ body {
     font-size: 20px;
     width: 60%;
 }
+
+.counts {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.count-text {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.total-count {
+    margin-top: 40px;
+}

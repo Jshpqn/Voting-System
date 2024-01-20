@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(221, 225, 228);
+}
+
+.voting-container {
+    margin: 20px;
+    height: 1000px;
+    display: flex;
+}
+
+.partylist-one {
+    width: 50%;
+    height: 1000px;
+
+    background-color: white;
+}
+
+.partylist-two {
+    width: 50%;
+    height: 1000px;
+
+    background-color: white;
+}
